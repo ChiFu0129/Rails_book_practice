@@ -1,2 +1,8 @@
-<h1>Books#show</h1>
-<p>Find me in app/views/books/show.html.erb</p>
+<% if @book %>
+
+<h1><%= @book.name %></h1>
+
+<%= @book.date %> <%= @book.price %> <%= @book.page %> <%= @book.ISBN %> <% else
+%>
+
+<% end %>
